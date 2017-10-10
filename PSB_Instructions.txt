@@ -1,0 +1,18 @@
+
+Instructions By Alexander Man
+Parallax_Scrolling_Background.cs
+This isn't a script but more so as instructions for Parallax Scrolling backgrounds 
+in unity 5 2D game development
+Date: October 9, 2017
+
+
+Step 1: Drag images and set them as game objects or as a collection
+Step 2: Create a new camera (child) under Main Camera, name it "BackgroundCamera"
+Step 3: Give the game objects a layer "Background"
+Step 4: Change "Main Camera's" Camera component's "Clear Flags" to Depths Only 
+        & Culling Mask to just the newly created Layer
+Step 5: Change BackgroundCamera's Clear Flagsa to Skybox & Culling Mask to Background
+        & Projection to Orthographic; Near = 0; Depth = -1;Uncheck Audio Listener;
+Step 6: Change the size of "BackgroundCamera" to 7; Don't forget to add the layers to objects
+
+There is no actual code :P
